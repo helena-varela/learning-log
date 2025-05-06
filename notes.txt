@@ -14,7 +14,7 @@ ANOTAÇÕES:
     sudo apt install sqlitebrowser -y
     sqlitebrowser
 
-4. Comandos Django:
+4. Comandos Django arquivo manage.py:
     python manage.py startapp nome_do_app 
     python manage.py migrate: cria um banco de dados inicial
     python manage.py makemigrations nome_do_app: atualiza o banco de dados
