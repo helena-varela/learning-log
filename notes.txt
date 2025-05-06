@@ -15,10 +15,23 @@ ANOTAÇÕES:
     sqlitebrowser
 
 4. Comandos Django arquivo manage.py:
-    python manage.py startapp nome_do_app 
-    python manage.py migrate: cria um banco de dados inicial
-    python manage.py makemigrations nome_do_app: atualiza o banco de dados
-    python manage.py runserver: roda um servidor 
+    4.1 
+        python manage.py startapp nome_do_app 
+        python manage.py makemigrations nome_do_app: atualiza o banco de dados
+        python manage.py migrate: cria um banco de dados
+        python manage.py runserver: roda um servidor
+
+    4.2 Shell interativo - testes sem acessar o painel administrativo
+        python nome_do_app.models import classe_de_models
+        classe_de_models.objects.all() - > vai acessar todos os objetos da classe que foram registrados
+        ou também pode fazer: 
+        topic = Topic.objects.all()
+            print(topic.id, topic())
+        também pode usar o .get:
+        t = Topic.objects.get(id=1)
+        t.text
+        t.date_added
+        t.entry_set.all()
 
 5. O que fazer:
     nos settings adicionar o nome do app para o django reconhecer a pasta como app
