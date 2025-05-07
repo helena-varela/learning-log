@@ -44,3 +44,8 @@ ANOTAÇÕES:
     ForeignKey = cria um vínculo entre dois modelos
     def __str__(self): no painel administrativo mostra o campo de bancos de dados
 
+8. Método GET e POST 
+    8.1 GET
+        É utilizado somente quando um formulário não altera os dados do usuário (como um formulário de busca)
+    8.2 POST
+        É utilizado quando os dados resultarem em uma alteração no banco de dados
